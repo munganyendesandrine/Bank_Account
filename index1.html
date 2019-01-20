@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+    <script src=https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="bank1.js"></script>
+    <title>Bank_Account</title>
+  </head>
+  <body>  
+    <div class="container">
+      <div class="a"> 
+        <div class="row">
+          <div class="jumbotron">
+            <form action="">
+              <img src="images/dove.png" width="100" height="100"><br>
+              <h3>Welcome to Dove Bank Ltd App</h3>
+              <label for="fname">User Name</label>
+              <input type="text" name="user" value="Enter Username"><br>
+              <label for="fname">Password</label>
+              <input type="password" name="pwd" value="Enter Password"><br>
+              <!--<button class="begin" onclick="myFunction()">Submit</button>-->
+              <p><span class="begin">Start</span></p>
+            </form>  
+          </div>
+        </div>
+     </div>
+     <!--Quiz Board Form Panel-->
+        <div class="b">
+            <div class="container-fluid">
+                <form id="test">
+                    <div class="well">
+                      <h3><strong>Bank Account Transactions</strong> </h3>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h2 class="panel-title">Deposit</h2>
+                        </div>
+                        <label for="Q1">Transaction Time</label>
+                        <input type="text" required id="time" class="form-control">
+                        <label for="Q4">Available Amount</label>
+                        <input type="text" required id="amountAvailable2" class="form-control" value=0>
+                        <label for="Q2">Deposit Amount</label>
+                        <input type="text" required id="deposit" class="form-control"><br>
+                        <button type="submit" onclick="CheckDeposit()" class="btn" id="amountAvailable">Calculate New Balance</button><br>
+                        <label for="Q4">New Balance</label>
+                        <input type="text" required id="new1" class="form-control">
+                      </div>
+                      <br>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h2 class="panel-title">Withdraw</h2>
+                        </div>
+                        <label for="Q1">Transaction Time</label>
+                        <input type="text" required id="time2" class="form-control">
+                        <label for="Q4">Available Amount</label>
+                        <input type="text" required id="amountAvailable2b" class="form-control">
+                        <label for="Q2">Withdrawn Amount</label>
+                        <input type="text" required id="withdraw" class="form-control"><br>
+                        <button type="submit" onclick="CheckWithdraw()" class="btn" id="amountAvailable2">Calculate New Balance</button><br>
+                        <label for="Q4">New Balance</label>
+                        <input type="text" required id="new2" class="form-control">
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h2 class="panel-title">Transaction History</h2>
+                        </div>
+                        <label for="Q1">Transaction Date and Time</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="Q4">Amount</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="Q4">Type Of Transaction</label>
+                      </div>
+                      
+                      
+                    </div>
+                  </form>
+                  
+        </div>            
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+          
+    </div>
+
+    <section>                  
+      <footer>
+        <a><strong><i><u>Author</u>: Sandrine MUNGANYENDE</i></strong></a>
+        <a href="#top">Top of Page</a>
+        <a><strong><em>Copyright©2018 Bank Account Project</em></strong></a>
+      </footer>           
+    </section> 
+  </body>
+</html>
